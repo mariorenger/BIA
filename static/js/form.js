@@ -35,6 +35,9 @@ $(document).ready(function () {
 			url: '/process'
 		})
 			.done(function (data) {
+				$('#errorAlert').innerHTML = ''
+				$('#successAlert').innerHTML = ''
+
 				if (data.error) {
 					$('#errorAlert').text(data.error).show();
 					$('#successAlert').hide();
@@ -45,8 +48,10 @@ $(document).ready(function () {
 					main_element.style.display = '';
 					show_row_infor(main_element, data.data);
 					main_element.style.fontSize = '16px'
-					main_element.show();
+					// main_element.show();
+					console.log(1);
 					$('#errorAlert').hide();
+					console.log(2);
 				}
 
 			});
@@ -72,6 +77,8 @@ $(document).ready(function () {
 			url: 'predict'
 		})
 			.done(function (data) {
+				$('#errorAlert2').innerHTML = ''
+				$('#successAlert2').innerHTML = ''
 
 				if (data.error) {
 					$('#errorAlert2').text(data.error).show();
@@ -83,7 +90,7 @@ $(document).ready(function () {
 					main_element.style.display = '';
 					show_row_infor(main_element, data.data);
 					main_element.style.fontSize = '16px'
-					main_element.show();
+					// main_element.show();
 					$('#errorAlert2').hide();
 				}
 
