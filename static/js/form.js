@@ -1,11 +1,11 @@
 function show_row_infor(element, data) {
+	element.innerHTML = ''
 	for (let [k, v] of Object.entries(data)){
 		let row_element = document.createElement('div')
 		let label_element = document.createElement('div')
 		label_element.style.display = 'inline-block'
 		label_element.innerHTML = k + ': '
 		
-
 		let infor_element = document.createElement('div')
 		infor_element.style.display = 'inline-block'
 		infor_element.style.paddingLeft = '10px'
