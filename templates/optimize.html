@@ -1,0 +1,57 @@
+{% extends "layout.html" %} {% block content %}
+<h3 class="text-center">Tối ưu</h3>
+<form action="/process-optimize" method="post">
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="ageMin">Age Min</label>
+			<input class="form-control" id="ageMin" name="AgeMin" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="AgeMax">Age Max</label>
+			<input class="form-control" id="AgeMax" name="AgeMax" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="InterestMin">Interest Min</label>
+			<input class="form-control" id="InterestMin" name="InterestMin" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="InterestMax">Interest Max</label>
+			<input class="form-control" id="InterestMax" name="InterestMax" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="ImpressionsMin">Impressions Min</label>
+			<input class="form-control" id="ImpressionsMin" name="ImpressionsMin" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="ImpressionsMax">Impressions Max</label>
+			<input class="form-control" id="ImpressionsMax" name="ImpressionsMax" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="clickMin">Click Min</label>
+			<input class="form-control" id="clickMin" name="ClickMin" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="ClickMax">Click Max</label>
+			<input class="form-control" id="ClickMax" name="ClickMax" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="SpentMin">Spent Min</label>
+			<input class="form-control" id="SpentMin" name="SpentMin" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="SpentMax">Spent Max</label>
+			<input class="form-control" id="SpentMax" name="SpentMax" placeholder="">
+		</div>
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

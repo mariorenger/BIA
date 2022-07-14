@@ -45,9 +45,25 @@
 
 	/* Style the tab content */
 	.tabcontent {
-	  padding-left: 20%;
+	  /* padding-left: 20%; */
 	  display: none;
 	}
+
+	.middle{
+		margin: auto;
+		width: 50%;
+	}
+
+	.pretty {
+		margin: auto; 
+		text-align: center;
+		width: 50%;
+		background-color: aliceblue;
+		border-radius: 15px;
+		padding: 20px 0px 20px 0px;
+	}
+
+
 	</style>
 </head>
 <body>
@@ -81,8 +97,8 @@ function openTab(evt, tabName) {
 	<h6>Thời lượng hiển thị: 87-1.000.000 (s)
 	<h6>Click: 0-421 (lượt)
 	<br><br>
-	<form id="form1" class="form-inline">
-	<label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Age</label>
+	<form id="form1" class="form-inline pretty" >
+	<label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Age</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="AgeMin" placeholder="Age Min">
 	  </div>
@@ -91,7 +107,7 @@ function openTab(evt, tabName) {
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Interest</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Interest</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="InterestMin" placeholder="Interest Min">
 	  </div>
@@ -100,7 +116,7 @@ function openTab(evt, tabName) {
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Impressions</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Impressions</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="ImpressionsMin" placeholder="Impressions Min">
 	  </div>
@@ -109,7 +125,7 @@ function openTab(evt, tabName) {
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Click</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Click</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="ClickMin" placeholder="Click Min">
 	  </div>
@@ -118,7 +134,7 @@ function openTab(evt, tabName) {
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Spent</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Spent</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="SpentMin" placeholder="Spent Min">
 	  </div>
@@ -127,63 +143,61 @@ function openTab(evt, tabName) {
 	  </div>
 	  <br><br>
 	  <br><br>
-	  <br><br>
 
-	  <button type="submit" class="btn btn-default">Submit</button>
+	  <button type="submit" class="btn btn-default btn-primary">Submit</button>
 	  
 	</form>
 	<br>
-	<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
-	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+	<div id="successAlert" class="alert alert-success middle" role="alert" style="display:none;"></div>
+	<div id="errorAlert" class="alert alert-danger middle" role="alert" style="display:none;"></div>
 </div>
 
 <div id="Regress" class="tabcontent">
 	<br><br>
-	<form id="form2" class="form-inline">
-		<label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Age</label>
+	<form id="form2" class="form-inline pretty">
+		<label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Age</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Age" placeholder="Age">
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Gender</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Gender</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Gender" placeholder="Gender">
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Interest</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Interest</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Interest" placeholder="Interest">
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Impressions</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Impressions</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Impressions" placeholder="Impressions">
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Click</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Click</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Click" placeholder="Click">
 	  </div>
 	  <br><br>
 
-	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block">Spent</label>
+	  <label class="label label-default" style="font-size:18px; width:200px; text-transform: uppercase; display:inline-block; background-color: #888888;">Spent</label>
 	  <div class="form-group">
 	    <input type="text" class="form-control" id="Spent" placeholder="Spent">
 	  </div>
 	  <br><br>
 	  <br><br>
-	  <br><br>
 
-	  <button type="submit" class="btn btn-default">Submit</button>
+	  <button type="submit" class="btn btn-default btn-primary">Submit</button>
 	  
 	</form>
 	<br>
-	<div id="successAlert2" class="alert alert-success" role="alert" style="display:none;"></div>
-	<div id="errorAlert2" class="alert alert-danger" role="alert" style="display:none;"></div>
+	<div id="successAlert2" class="alert alert-success middle" role="alert" style="display:none;"></div>
+	<div id="errorAlert2" class="alert alert-danger middle" role="alert" style="display:none;"></div>
 </div>
 
 </body>
